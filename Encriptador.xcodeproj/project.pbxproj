@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40DDE6521CC2E677001932EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6511CC2E677001932EC /* main.m */; };
+		40DDE6551CC2E677001932EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6541CC2E677001932EC /* AppDelegate.m */; };
+		40DDE6581CC2E677001932EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6571CC2E677001932EC /* ViewController.m */; };
+		40DDE65B1CC2E677001932EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DDE6591CC2E677001932EC /* Main.storyboard */; };
+		40DDE65D1CC2E677001932EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DDE65C1CC2E677001932EC /* Assets.xcassets */; };
+		40DDE6601CC2E677001932EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DDE65E1CC2E677001932EC /* LaunchScreen.storyboard */; };
+		40DDE66B1CC2E677001932EC /* EncriptadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE66A1CC2E677001932EC /* EncriptadorTests.m */; };
+		40DDE6761CC2E677001932EC /* EncriptadorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6751CC2E677001932EC /* EncriptadorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DDE6671CC2E677001932EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DDE6451CC2E677001932EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DDE64C1CC2E677001932EC;
+			remoteInfo = Encriptador;
+		};
+		40DDE6721CC2E677001932EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DDE6451CC2E677001932EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DDE64C1CC2E677001932EC;
+			remoteInfo = Encriptador;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40DDE64D1CC2E677001932EC /* Encriptador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encriptador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DDE6511CC2E677001932EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40DDE6531CC2E677001932EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40DDE6541CC2E677001932EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40DDE6561CC2E677001932EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40DDE6571CC2E677001932EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40DDE65A1CC2E677001932EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40DDE65C1CC2E677001932EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40DDE65F1CC2E677001932EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40DDE6611CC2E677001932EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DDE6661CC2E677001932EC /* EncriptadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncriptadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DDE66A1CC2E677001932EC /* EncriptadorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncriptadorTests.m; sourceTree = "<group>"; };
+		40DDE66C1CC2E677001932EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DDE6711CC2E677001932EC /* EncriptadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncriptadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DDE6751CC2E677001932EC /* EncriptadorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncriptadorUITests.m; sourceTree = "<group>"; };
+		40DDE6771CC2E677001932EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DDE64A1CC2E677001932EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE6631CC2E677001932EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE66E1CC2E677001932EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DDE6441CC2E677001932EC = {
+			isa = PBXGroup;
+			children = (
+				40DDE64F1CC2E677001932EC /* Encriptador */,
+				40DDE6691CC2E677001932EC /* EncriptadorTests */,
+				40DDE6741CC2E677001932EC /* EncriptadorUITests */,
+				40DDE64E1CC2E677001932EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40DDE64E1CC2E677001932EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DDE64D1CC2E677001932EC /* Encriptador.app */,
+				40DDE6661CC2E677001932EC /* EncriptadorTests.xctest */,
+				40DDE6711CC2E677001932EC /* EncriptadorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DDE64F1CC2E677001932EC /* Encriptador */ = {
+			isa = PBXGroup;
+			children = (
+				40DDE6531CC2E677001932EC /* AppDelegate.h */,
+				40DDE6541CC2E677001932EC /* AppDelegate.m */,
+				40DDE6561CC2E677001932EC /* ViewController.h */,
+				40DDE6571CC2E677001932EC /* ViewController.m */,
+				40DDE6591CC2E677001932EC /* Main.storyboard */,
+				40DDE65C1CC2E677001932EC /* Assets.xcassets */,
+				40DDE65E1CC2E677001932EC /* LaunchScreen.storyboard */,
+				40DDE6611CC2E677001932EC /* Info.plist */,
+				40DDE6501CC2E677001932EC /* Supporting Files */,
+			);
+			path = Encriptador;
+			sourceTree = "<group>";
+		};
+		40DDE6501CC2E677001932EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40DDE6511CC2E677001932EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40DDE6691CC2E677001932EC /* EncriptadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				40DDE66A1CC2E677001932EC /* EncriptadorTests.m */,
+				40DDE66C1CC2E677001932EC /* Info.plist */,
+			);
+			path = EncriptadorTests;
+			sourceTree = "<group>";
+		};
+		40DDE6741CC2E677001932EC /* EncriptadorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40DDE6751CC2E677001932EC /* EncriptadorUITests.m */,
+				40DDE6771CC2E677001932EC /* Info.plist */,
+			);
+			path = EncriptadorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40DDE64C1CC2E677001932EC /* Encriptador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DDE67A1CC2E678001932EC /* Build configuration list for PBXNativeTarget "Encriptador" */;
+			buildPhases = (
+				40DDE6491CC2E677001932EC /* Sources */,
+				40DDE64A1CC2E677001932EC /* Frameworks */,
+				40DDE64B1CC2E677001932EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encriptador;
+			productName = Encriptador;
+			productReference = 40DDE64D1CC2E677001932EC /* Encriptador.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40DDE6651CC2E677001932EC /* EncriptadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DDE67D1CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorTests" */;
+			buildPhases = (
+				40DDE6621CC2E677001932EC /* Sources */,
+				40DDE6631CC2E677001932EC /* Frameworks */,
+				40DDE6641CC2E677001932EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DDE6681CC2E677001932EC /* PBXTargetDependency */,
+			);
+			name = EncriptadorTests;
+			productName = EncriptadorTests;
+			productReference = 40DDE6661CC2E677001932EC /* EncriptadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40DDE6701CC2E677001932EC /* EncriptadorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DDE6801CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorUITests" */;
+			buildPhases = (
+				40DDE66D1CC2E677001932EC /* Sources */,
+				40DDE66E1CC2E677001932EC /* Frameworks */,
+				40DDE66F1CC2E677001932EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DDE6731CC2E677001932EC /* PBXTargetDependency */,
+			);
+			name = EncriptadorUITests;
+			productName = EncriptadorUITests;
+			productReference = 40DDE6711CC2E677001932EC /* EncriptadorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DDE6451CC2E677001932EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Osiris;
+				TargetAttributes = {
+					40DDE64C1CC2E677001932EC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					40DDE6651CC2E677001932EC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 40DDE64C1CC2E677001932EC;
+					};
+					40DDE6701CC2E677001932EC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 40DDE64C1CC2E677001932EC;
+					};
+				};
+			};
+			buildConfigurationList = 40DDE6481CC2E677001932EC /* Build configuration list for PBXProject "Encriptador" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40DDE6441CC2E677001932EC;
+			productRefGroup = 40DDE64E1CC2E677001932EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40DDE64C1CC2E677001932EC /* Encriptador */,
+				40DDE6651CC2E677001932EC /* EncriptadorTests */,
+				40DDE6701CC2E677001932EC /* EncriptadorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40DDE64B1CC2E677001932EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDE6601CC2E677001932EC /* LaunchScreen.storyboard in Resources */,
+				40DDE65D1CC2E677001932EC /* Assets.xcassets in Resources */,
+				40DDE65B1CC2E677001932EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE6641CC2E677001932EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE66F1CC2E677001932EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DDE6491CC2E677001932EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDE6581CC2E677001932EC /* ViewController.m in Sources */,
+				40DDE6551CC2E677001932EC /* AppDelegate.m in Sources */,
+				40DDE6521CC2E677001932EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE6621CC2E677001932EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDE66B1CC2E677001932EC /* EncriptadorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DDE66D1CC2E677001932EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDE6761CC2E677001932EC /* EncriptadorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40DDE6681CC2E677001932EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DDE64C1CC2E677001932EC /* Encriptador */;
+			targetProxy = 40DDE6671CC2E677001932EC /* PBXContainerItemProxy */;
+		};
+		40DDE6731CC2E677001932EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DDE64C1CC2E677001932EC /* Encriptador */;
+			targetProxy = 40DDE6721CC2E677001932EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40DDE6591CC2E677001932EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DDE65A1CC2E677001932EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40DDE65E1CC2E677001932EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DDE65F1CC2E677001932EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40DDE6781CC2E678001932EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40DDE6791CC2E678001932EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40DDE67B1CC2E678001932EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Encriptador/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.Encriptador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40DDE67C1CC2E678001932EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Encriptador/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.Encriptador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		40DDE67E1CC2E678001932EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EncriptadorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.EncriptadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encriptador.app/Encriptador";
+			};
+			name = Debug;
+		};
+		40DDE67F1CC2E678001932EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EncriptadorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.EncriptadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encriptador.app/Encriptador";
+			};
+			name = Release;
+		};
+		40DDE6811CC2E678001932EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EncriptadorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.EncriptadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encriptador;
+			};
+			name = Debug;
+		};
+		40DDE6821CC2E678001932EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EncriptadorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiristech.EncriptadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encriptador;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DDE6481CC2E677001932EC /* Build configuration list for PBXProject "Encriptador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DDE6781CC2E678001932EC /* Debug */,
+				40DDE6791CC2E678001932EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DDE67A1CC2E678001932EC /* Build configuration list for PBXNativeTarget "Encriptador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DDE67B1CC2E678001932EC /* Debug */,
+				40DDE67C1CC2E678001932EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		40DDE67D1CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DDE67E1CC2E678001932EC /* Debug */,
+				40DDE67F1CC2E678001932EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		40DDE6801CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DDE6811CC2E678001932EC /* Debug */,
+				40DDE6821CC2E678001932EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DDE6451CC2E677001932EC /* Project object */;
+}
