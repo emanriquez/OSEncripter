@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Seguridad.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *encriptado = [Seguridad encriptarTexto:@"HOLA" :@"secreto_privado"];
+    _texto.text = encriptado;
 }
 
 - (void)didReceiveMemoryWarning {
