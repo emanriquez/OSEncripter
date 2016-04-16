@@ -15,9 +15,6 @@
 		40DDE6601CC2E677001932EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DDE65E1CC2E677001932EC /* LaunchScreen.storyboard */; };
 		40DDE66B1CC2E677001932EC /* EncriptadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE66A1CC2E677001932EC /* EncriptadorTests.m */; };
 		40DDE6761CC2E677001932EC /* EncriptadorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6751CC2E677001932EC /* EncriptadorUITests.m */; };
-		40DDE68B1CC2E71D001932EC /* Seguridad.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6861CC2E71D001932EC /* Seguridad.m */; };
-		40DDE68C1CC2E71D001932EC /* FBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE6891CC2E71D001932EC /* FBEncryptorAES.m */; };
-		40DDE68D1CC2E71D001932EC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DDE68A1CC2E71D001932EC /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +51,6 @@
 		40DDE6711CC2E677001932EC /* EncriptadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncriptadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DDE6751CC2E677001932EC /* EncriptadorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncriptadorUITests.m; sourceTree = "<group>"; };
 		40DDE6771CC2E677001932EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40DDE6851CC2E71D001932EC /* Seguridad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seguridad.h; sourceTree = "<group>"; };
-		40DDE6861CC2E71D001932EC /* Seguridad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seguridad.m; sourceTree = "<group>"; };
-		40DDE6871CC2E71D001932EC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		40DDE6881CC2E71D001932EC /* FBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEncryptorAES.h; sourceTree = "<group>"; };
-		40DDE6891CC2E71D001932EC /* FBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEncryptorAES.m; sourceTree = "<group>"; };
-		40DDE68A1CC2E71D001932EC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +105,6 @@
 				40DDE6541CC2E677001932EC /* AppDelegate.m */,
 				40DDE6561CC2E677001932EC /* ViewController.h */,
 				40DDE6571CC2E677001932EC /* ViewController.m */,
-				40DDE6851CC2E71D001932EC /* Seguridad.h */,
-				40DDE6861CC2E71D001932EC /* Seguridad.m */,
-				40DDE6871CC2E71D001932EC /* NSData+Base64.h */,
-				40DDE6881CC2E71D001932EC /* FBEncryptorAES.h */,
-				40DDE6891CC2E71D001932EC /* FBEncryptorAES.m */,
-				40DDE68A1CC2E71D001932EC /* NSData+Base64.m */,
 				40DDE6591CC2E677001932EC /* Main.storyboard */,
 				40DDE65C1CC2E677001932EC /* Assets.xcassets */,
 				40DDE65E1CC2E677001932EC /* LaunchScreen.storyboard */,
@@ -285,12 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DDE68C1CC2E71D001932EC /* FBEncryptorAES.m in Sources */,
 				40DDE6581CC2E677001932EC /* ViewController.m in Sources */,
 				40DDE6551CC2E677001932EC /* AppDelegate.m in Sources */,
-				40DDE68B1CC2E71D001932EC /* Seguridad.m in Sources */,
 				40DDE6521CC2E677001932EC /* main.m in Sources */,
-				40DDE68D1CC2E71D001932EC /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +498,6 @@
 				40DDE67C1CC2E678001932EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		40DDE67D1CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorTests" */ = {
 			isa = XCConfigurationList;
@@ -525,7 +506,6 @@
 				40DDE67F1CC2E678001932EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		40DDE6801CC2E678001932EC /* Build configuration list for PBXNativeTarget "EncriptadorUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,7 +514,6 @@
 				40DDE6821CC2E678001932EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
