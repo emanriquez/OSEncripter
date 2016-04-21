@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red228\green228\blue255;\red0\green0\blue255;
+\red0\green128\blue0;\red128\green128\blue128;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 import 
+\f1\b0 \cf0 android.util.Base64;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 java.security.InvalidAlgorithmParameterException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 java.security.InvalidKeyException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 java.security.NoSuchAlgorithmException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 java.security.spec.AlgorithmParameterSpec;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .BadPaddingException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .Cipher;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .IllegalBlockSizeException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .NoSuchPaddingException;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .spec.IvParameterSpec;\uc0\u8232 
+\f0\b \cf2 import 
+\f1\b0 \cf0 javax.\cb3 crypto\cb1 .spec.SecretKeySpec;\uc0\u8232 \u8232 
+\f0\b \cf2 public class 
+\f1\b0 \cf0 AES256Cipher \{\uc0\u8232 \u8232 \u8232     
+\f0\b \cf2 public static byte
+\f1\b0 \cf0 [] ivBytes = \{\cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 , \cf4 0x00\cf0 \};\uc0\u8232 \u8232 \u8232     
+\f0\b \cf2 public static 
+\f1\b0 \cf0 String AES_Encode(String str, String key) 
+\f0\b \cf2 throws 
+\f1\b0 \cf0 java.io.UnsupportedEncodingException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException \{\uc0\u8232 \u8232         
+\f0\b \cf2 byte
+\f1\b0 \cf0 [] textBytes = str.getBytes(
+\f0\b \cf5 "UTF-8"
+\f1\b0 \cf0 );\uc0\u8232         AlgorithmParameterSpec ivSpec = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 IvParameterSpec(ivBytes);\uc0\u8232         SecretKeySpec newKey = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 SecretKeySpec(key.getBytes(
+\f0\b \cf5 "UTF-8"
+\f1\b0 \cf0 ), 
+\f0\b \cf5 "AES"
+\f1\b0 \cf0 );\uc0\u8232         Cipher cipher = 
+\f0\b \cf2 null
+\f1\b0 \cf0 ;\uc0\u8232         cipher = Cipher.getInstance(
+\f0\b \cf5 "AES/CBC/PKCS5Padding"
+\f1\b0 \cf0 );\uc0\u8232         cipher.init(Cipher.ENCRYPT_MODE, newKey, ivSpec);\u8232 \u8232         
+\f0\b \cf2 return 
+\f1\b0 \cf0 Base64.encodeToString(cipher.doFinal(textBytes), Base64.NO_CLOSE);\uc0\u8232     \}\u8232 \u8232     
+\f0\b \cf2 public static 
+\f1\b0 \cf0 String AES_Decode(String str, String key) 
+\f0\b \cf2 throws 
+\f1\b0 \cf0 java.io.UnsupportedEncodingException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException \{\uc0\u8232 \u8232         
+\f0\b \cf2 byte
+\f1\b0 \cf0 [] textBytes = Base64.decode(str, \cf4 0\cf0 );\uc0\u8232         
+\f2\i \cf6 //byte[] textBytes = str.getBytes("UTF-8");\uc0\u8232         
+\f1\i0 \cf0 AlgorithmParameterSpec ivSpec = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 IvParameterSpec(ivBytes);\uc0\u8232         SecretKeySpec newKey = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 SecretKeySpec(key.getBytes(
+\f0\b \cf5 "UTF-8"
+\f1\b0 \cf0 ), 
+\f0\b \cf5 "AES"
+\f1\b0 \cf0 );\uc0\u8232         Cipher cipher = Cipher.getInstance(
+\f0\b \cf5 "AES/CBC/PKCS5Padding"
+\f1\b0 \cf0 );\uc0\u8232         cipher.init(Cipher.DECRYPT_MODE, newKey, ivSpec);\u8232         
+\f0\b \cf2 return new 
+\f1\b0 \cf0 String(cipher.doFinal(textBytes), 
+\f0\b \cf5 "UTF-8"
+\f1\b0 \cf0 );\uc0\u8232     \}\u8232 \u8232 \u8232 \}\u8232 \
+}

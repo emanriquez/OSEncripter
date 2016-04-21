@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue0;\red196\green26\blue22;
+\red128\green128\blue128;\red0\green0\blue255;}
+\margl1440\margr1440\vieww38200\viewh20180\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 public static 
+\f1\b0 \cf0 String generateToken(String run) \{\uc0\u8232 \u8232     AES256Cipher.ivBytes = getSHA256base16(generarClaveDinamica(run)).getBytes();\u8232 \u8232 \u8232     
+\f0\b \cf2 try 
+\f1\b0 \cf0 \{\uc0\u8232         String keyEncript = getSHA256base32(
+\f0\b \cf3 \'93
+\f1\b0\fs22 \cf4 \CocoaLigature0 SECRET KEY
+\f0\b\fs24 \cf3 \CocoaLigature1 \'94
+\f1\b0 \cf0 );\uc0\u8232 \u8232         String encodeText = AES256Cipher.AES_Encode(
+\f0\b \cf3 \'93
+\f1\b0\fs22 \cf4 \CocoaLigature0 TEXTO PASO
+\f0\b\fs24 \cf3 \CocoaLigature1 \'94
+\f1\b0 \cf0 , keyEncript);\uc0\u8232 \u8232         
+\f2\i \cf5 // Log.d("encodeText 2","encodeText ->"+encodeText);\uc0\u8232 \u8232         
+\f1\i0 \cf0 encodeText = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 String(Base64.encodeBase64(encodeText.getBytes(
+\f0\b \cf3 "ASCII"
+\f1\b0 \cf0 )));\uc0\u8232 \u8232         
+\f2\i \cf5 // Log.d("encodeText 2","encodeText ->"+encodeText);\uc0\u8232         
+\f0\i0\b \cf2 return 
+\f1\b0 \cf0 encodeText;\uc0\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (UnsupportedEncodingException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (NoSuchAlgorithmException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (NoSuchPaddingException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (InvalidKeyException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (InvalidAlgorithmParameterException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (IllegalBlockSizeException e) \{\uc0\u8232         e.printStackTrace();\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (BadPaddingException e) \{\uc0\u8232         e.printStackTrace();\u8232     \}\u8232     
+\f0\b \cf2 return null
+\f1\b0 \cf0 ;\uc0\u8232 \}\u8232 \
+\
+\
+
+\f0\b \cf2 public static 
+\f1\b0 \cf0 String getSHA256base32(String text) \{\uc0\u8232 \u8232     
+\f0\b \cf2 try 
+\f1\b0 \cf0 \{\uc0\u8232         MessageDigest digest = MessageDigest.getInstance(
+\f0\b \cf3 "SHA-256"
+\f1\b0 \cf0 );\uc0\u8232         
+\f0\b \cf2 byte
+\f1\b0 \cf0 [] hash = digest.digest(text.getBytes(
+\f0\b \cf3 "UTF-8"
+\f1\b0 \cf0 ));\uc0\u8232         StringBuffer hexString = 
+\f0\b \cf2 new 
+\f1\b0 \cf0 StringBuffer();\uc0\u8232 \u8232         
+\f0\b \cf2 for 
+\f1\b0 \cf0 (
+\f0\b \cf2 int 
+\f1\b0 \cf0 i = \cf6 0\cf0 ; i < \cf6 16\cf0 ; i++) \{\uc0\u8232             String hex = Integer.toHexString(\cf6 0xff \cf0 & hash[i]);\uc0\u8232             
+\f0\b \cf2 if 
+\f1\b0 \cf0 (hex.length() == \cf6 1\cf0 ) hexString.append(
+\f0\b \cf3 '0'
+\f1\b0 \cf0 );\uc0\u8232             hexString.append(hex);\u8232         \}\u8232 \u8232         
+\f0\b \cf2 return 
+\f1\b0 \cf0 hexString.toString();\uc0\u8232     \} 
+\f0\b \cf2 catch 
+\f1\b0 \cf0 (Exception ex) \{\uc0\u8232         
+\f0\b \cf2 throw new 
+\f1\b0 \cf0 RuntimeException(ex);\uc0\u8232     \}\u8232 \u8232 \}\
+}
